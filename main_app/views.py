@@ -1,9 +1,13 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from django.http import HttpResponse
+from .models import CountryInfo
 
 def index(request):
-    return render(request,'main_app/index.html')
+    countries = CountryInfo.objects.all()
+    context = {
+        'countries':countries,
+    }
+    return render(request,'main_app/index.html',context)
 
 
 
