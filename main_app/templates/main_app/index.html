@@ -19,8 +19,8 @@
     <div class="container">
         <div class="row">
         {% for country in countries %}
-        <div class="col">   
-        <div class="card" style="width: 18rem;">
+        <div class="col">    <br>
+            <div class="card" style="width: 18rem;">
             <img src="{{ MEDIA_URL }}{{ country.country_flag }}" class="card-img-top" alt="...">
             <div class="card-body">
             <h3 class="card-title">{{ country.country_name }}</h3>
@@ -29,7 +29,6 @@
             </div>
         </div>
             </div>
-     <br>
     {% endfor %}
 </div>
 
