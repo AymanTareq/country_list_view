@@ -7,7 +7,7 @@ def index(request):
     context = {
         'countries':countries,
     }
-    return render(request,'main_app/base.html',context=context)
+    return render(request,'main_app/index.html',context)
 
 
 
