@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import View
 from .models import CountryInfo
+from django.views.generic import TemplateView
 
 def index(request):
     countries = CountryInfo.objects.all()
@@ -11,14 +12,12 @@ def index(request):
 
 
 
+class AboutView(TemplateView):
+    template_name = 'main_app/about.html'
 
 
-# This is from app2 application
-# from django.shortcuts import render, redirect
-# from .models import Image
-# from .forms import ImageForm
 
-# def showimage(request):
+
 
 #     lastimage= Image.objects.last()
 
@@ -35,7 +34,7 @@ def index(request):
 #         pass
 
             
-#         context= {'imagefile': imagefile,
+        # context= {'imagefile': imagefile,
 #                 'form': form
 #                 }
     
