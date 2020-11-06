@@ -11,9 +11,11 @@ def index(request):
     return render(request,'main_app/index.html',context)
 
 
+def about_me(request):
+    return render(request, 'main_app/about.html')
 
-class AboutView(TemplateView):
-    template_name = 'main_app/about.html'
+# class AboutView(TemplateView):
+#     template_name = 'about.html'
 
 
 
