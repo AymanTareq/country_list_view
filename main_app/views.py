@@ -12,7 +12,7 @@ def index(request):
 
 
 def about_me(request):
-    return render(request, 'main_app/about.html')
+    return render(request, 'main_app/about_01.html')
 
 # class AboutView(TemplateView):
 #     template_name = 'about.html'
